@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Orthopaedic Website</title>
+    <style>
+        /* Add your custom styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+        .second-nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+        .second-nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .second-nav ul li {
+            display: inline;
+            margin-right: 10px;
+            position: relative;
+        }
+        .second-nav ul li a {
+            color: #333;
+            text-decoration: none;
+            padding: 8px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .second-nav ul li a:hover {
+            background-color: #ddd;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 4px;
+            padding: 8px 0;
+        }
+        .dropdown-content a {
+            color: #333;
+            padding: 8px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+    </style>
+    <script>
+        // JavaScript to toggle dropdown visibility
+        window.addEventListener('DOMContentLoaded', function () {
+            var dropdowns = document.getElementsByClassName('dropdown');
+            for (var i = 0; i < dropdowns.length; i++) {
+                dropdowns[i].addEventListener('click', function () {
+                    this.classList.toggle('active');
+                    var dropdownContent = this.getElementsByClassName('dropdown-content')[0];
+                    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="https://www.unom.ac.in/">University of Madras</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
+    <div class="second-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="#">Resources</a>
+                <div class="dropdown-content">
+                    <a href="books.html">Books</a>
+                    <a href="ebooks.html">E books</a>
+                    <a href="journals.html">Journals</a>
+                    <a href="doctor.html">Doctor</a>
+                </div>
+            </li>
+            <li><a href="reference.html">References</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Welcome to the Orthopaedic Website</h1>
+        <p>Welcome to our orthopaedic website! We are dedicated to providing comprehensive information and resources related to orthopaedics, a branch of medicine focused on the musculoskeletal system. Whether you're seeking information about common orthopaedic conditions, treatment options, or tips for maintaining musculoskeletal health, our website is here to assist you.</p>
+        <p>Explore our website to discover a wide range of topics, including orthopaedic surgeries, rehabilitation techniques, preventive measures, and the latest advancements in orthopaedic care. We aim to present the information in a user-friendly manner, ensuring that it is accessible to everyone seeking answers and support.</p>
+    </div>
+</body>
+</html>
